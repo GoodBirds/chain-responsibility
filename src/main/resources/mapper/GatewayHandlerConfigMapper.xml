@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liwei.chainresponsibility.mapper.GatewayHandlerConfigMapper">
+  <resultMap id="BaseResultMap" type="com.liwei.chainresponsibility.domain.GatewayHandlerConfig">
+    <!--@mbg.generated generated on Wed Mar 18 14:55:36 CST 2020.-->
+    <!--@Table gateway_handler_config-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="handler_name" jdbcType="VARCHAR" property="handlerName" />
+    <result column="handler_id" jdbcType="VARCHAR" property="handlerId" />
+    <result column="prev_handler_id" jdbcType="VARCHAR" property="prevHandlerId" />
+    <result column="next_handler_id" jdbcType="VARCHAR" property="nextHandlerId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed Mar 18 14:55:36 CST 2020.-->
+    id, handler_name, handler_id, prev_handler_id, next_handler_id
+  </sql>
+</mapper>
